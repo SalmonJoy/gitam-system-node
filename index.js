@@ -22,7 +22,10 @@ const client = new MongoClient(uri, {
   }
 });
 
-
+app.get('/',async function(req,res){
+  // run().catch(console.dir);
+    res.send("Testing....")
+})
 
 app.get('/courses',async function(req,res){
   // run().catch(console.dir);
